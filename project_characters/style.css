@@ -8,11 +8,13 @@ body * {
 
 
 body {
+    height: 100vh;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: center;   
 }
 
 .main-header {
@@ -28,6 +30,7 @@ body {
     margin-right: 1rem;
 }
 
+
 .container {
     width: 500px;
     height: 280px;
@@ -38,6 +41,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-top: 10rem;
 }
 
 .count {
