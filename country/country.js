@@ -12,10 +12,9 @@ btn.addEventListener('click', () => {
     else {
         list.append(Object.assign(document.createElement('li'), { textContent: value }))
     }
-
 })
 
-search.addEventListener("keyup", search)
+searchInput.addEventListener("keyup", search)
 
 function search() {
     const searchInputValue = searchInput.value
@@ -30,6 +29,12 @@ function search() {
             listElements[i].style.display = "none"
         }
     }
-
-
 }
+
+/*
+enterCountryBtn.addEventListener('click', () => {
+    if (enterCountry.value !== '') {
+        countryList.innerHTML += `<li>${enterCountry.value}</li>`;
+    }
+});
+*/
